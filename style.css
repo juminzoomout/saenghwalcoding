@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  margin: 20px 0 0 0;
+  border-bottom: solid;
+  height: 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+
+#grid ol {
+  width: 100px;
+  margin: 0 20px 0 40px;
+  padding-top: 15px;
+  border-right: solid;
+}
+
+li {
+  font-size: medium;
+}
+
+#grid .main {
+  padding: 15px 0 0 15px;
+}
+
+#grid .main a {
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(181, 180, 180);
+}
+
+a:hover {
+  color: gray;
+}
+
+#active {
+  color: rgb(198, 139, 225);
+}
+
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+  }
+
+  #grid ol {
+    border-right: none;
+  }
+}
